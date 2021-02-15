@@ -8,12 +8,12 @@
     <owners>watate</owners>
     <title>Mullvad app</title>
     <authors>Amagicom AB</authors>
-    <projectUrl>https://mullvad.net</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/watate/mullvad-app/icons/mullvad-app.png</iconUrl>
+    <projectUrl>https://mullvad.net/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/watate/mullvad-app@master/icons/mullvad-app.png</iconUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mullvad/mullvadvpn-app</projectSourceUrl>
-    <docsUrl>https://mullvad.net/en/guides/install-and-use-mullvad-app-windows/</docsUrl>
+    <docsUrl>https://mullvad.net/en/help/</docsUrl>
     <bugTrackerUrl>https://github.com/mullvad/mullvadvpn-app/issues</bugTrackerUrl>
     <releaseNotes>https://github.com/mullvad/mullvadvpn-app/blob/master/CHANGELOG.md</releaseNotes>
     <tags>vpn</tags>
