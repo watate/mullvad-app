@@ -1,15 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-if ($env:OS_VERSION < 7) {
-    throw "Mullvad VPN is only supported on Windows 7 or later"
-}
+#$trustedPublisherCertificate = "$toolsDir\openvpn_trusted_publisher.cer"
+#$trustedPublisherCertificateHash = '8f53adb36f1c61c50e11b8bdbef8d0ffb9b26665a69d81246551a0b455e72ec0b26a34dc9b65cb3750baf5d8a6d19896c3b4a31b578b15ab7086377955509fad'
 
-$trustedPublisherCertificate = "$toolsDir\openvpn_trusted_publisher.cer"
-$trustedPublisherCertificateHash = '8f53adb36f1c61c50e11b8bdbef8d0ffb9b26665a69d81246551a0b455e72ec0b26a34dc9b65cb3750baf5d8a6d19896c3b4a31b578b15ab7086377955509fad'
-
-$pgpPublicKey = "$toolsDir\MullvadVPN-2021.1.exe.asc"
-$pgpPublicKeyHash = '03fedf10b55d10ca03a3c0e7d8139a17b19255a869de8f40a70ea70b21fab8ea'
+#$pgpPublicKey = "$toolsDir\MullvadVPN-2021.1.exe.asc"
+#$pgpPublicKeyHash = '03fedf10b55d10ca03a3c0e7d8139a17b19255a869de8f40a70ea70b21fab8ea'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -23,12 +19,12 @@ $packageArgs = @{
   silentArgs    = '/S'
 }
 
-. "$toolsDir\utils\utils.ps1"
+#. "$toolsDir\utils\utils.ps1"
 
-Write-Host "Adding OpenVPN to the Trusted Publishers (needed to have a silent install of the TAP driver)..."
-AddTrustedPublisherCertificate -file "$trustedPublisherCertificate"
+#Write-Host "Adding OpenVPN to the Trusted Publishers (needed to have a silent install of the TAP driver)..."
+#AddTrustedPublisherCertificate -file "$trustedPublisherCertificate"
 
 Install-ChocolateyPackage @packageArgs
 
-Write-Host "Removing OpenVPN from the Trusted Publishers..."
-RemoveTrustedPublisherCertificate -file "$trustedPublisherCertificate"
+#Write-Host "Removing OpenVPN from the Trusted Publishers..."
+#RemoveTrustedPublisherCertificate -file "$trustedPublisherCertificate"

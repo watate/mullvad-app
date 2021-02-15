@@ -7,5 +7,5 @@
 # NOTE: For upgrades - like the uninstall script, this script always runs from 
 #  the currently installed version, not from the new upgraded package version.
 
-# Get-Service -Name "Mullvad*" | Stop-Service
-# Get-Process -Name "Mullvad*" | Stop-Process
+Get-Service -Name "Mullvad*" | Stop-Service
+Get-Process -Name "Mullvad*" | Stop-Process
