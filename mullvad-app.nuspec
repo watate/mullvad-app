@@ -4,12 +4,12 @@
   <metadata>
     <id>mullvad-app</id>
     <version>2021.1</version>
-    <packageSourceUrl>https://github.com/xfix/mullvad-app</packageSourceUrl>
-    <owners>xfix</owners>
+    <packageSourceUrl>https://github.com/watate/mullvad-app</packageSourceUrl>
+    <owners>watate</owners>
     <title>Mullvad app</title>
     <authors>Amagicom AB</authors>
     <projectUrl>https://mullvad.net</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/xfix/mullvad-app/icons/mullvad-app.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/watate/mullvad-app/icons/mullvad-app.png</iconUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mullvad/mullvadvpn-app</projectSourceUrl>
