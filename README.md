@@ -4,3 +4,6 @@ source: https://chocolatey.org/courses/creating-chocolatey-packages/building-tes
 run
 - choco pack
 - choco install packageName -dv -s .
+
+pushing your package
+- check bitwarden
