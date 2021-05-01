@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mullvad-app</id>
-    <version>2021.2</version>
+    <version>2021.3</version>
     <packageSourceUrl>https://github.com/watate/mullvad-app</packageSourceUrl>
     <owners>watate</owners>
     <title>Mullvad app</title>
